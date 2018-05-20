@@ -2,12 +2,18 @@ body {
     background-color: peachpuff;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+.wrapper {
+    transition: transform 0.6s ease;
+    transform: translateX(0);
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75px 70vw 1fr;
+    grid-template-rows: 25vw 70vw 1fr;
     width: 100vw;
     height: 100vh;
 }
@@ -17,7 +23,7 @@ nav {
     grid-column: 1;
     grid-row: 1;
     display: grid;
-    grid-template-columns: 172px 1fr 75px;
+    grid-template-columns: 172px 1fr 25vw;
     grid-template-rows: 1fr;
 }
 
@@ -25,9 +31,24 @@ nav {
     grid-column: 1;
 }
 
-.menubutton {
+.menu-button {
     grid-column: 3;
+    background-color: rgb(92, 92, 92);
 }
+
+.menu {
+    position: fixed;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    transform: translateX(100%);
+}
+
+.show-menu {
+    transform: translateX(-75%);
+}
+
+
 
 .gallery {
     grid-row: 2;
