@@ -1,26 +1,51 @@
 body {
     background-color: peachpuff;
     margin: 0;
+    padding: 0;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75px 1fr 1fr;
+    grid-template-rows: 75px 70vw 1fr;
     width: 100vw;
     height: 100vh;
 }
 
 nav {
+    background-color: rgb(50, 50, 50);
     grid-column: 1;
     grid-row: 1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 172px 1fr 75px;
     grid-template-rows: 1fr;
 }
 
+.logo {
+    grid-column: 1;
+}
+
+.menubutton {
+    grid-column: 3;
+}
+
 .gallery {
-    
+    grid-row: 2;
+    background-color: rgb(199, 199, 199);
+}
+
+/* semantic elements ??? */
+.section {
+    grid-row: 3;
+    background-color: rgb(50, 50, 50);
+}
+
+.info {
+    margin: 15px;
+    height: calc(100% - 30px);
+    width: calc(100% - 30px);
+    background-color: #fff;
+
 }
 
 @media only screen and (min-device-width: 600px) {
