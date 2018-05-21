@@ -14,7 +14,7 @@ html, body {
     transform: translateX(0);
     float: left;
     min-width: 100%;
-
+    overflow-y: visible;
 }
 
 .container {
@@ -76,7 +76,6 @@ nav {
 
 .show-menu {
     transform: translateX(-75%);
-    overflow-y: visible;
 }
 
 .fade {
