@@ -2,7 +2,6 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-
 }
 
 .wrapper {
@@ -11,7 +10,7 @@ html, body {
     opacity: 1;
     width: auto;
     height: auto;
-    transition: transform 0.5s ease;
+    transition: transform 0.4s ease;
     transform: translateX(0);
     float: left;
     min-width: 100%;
@@ -24,7 +23,7 @@ html, body {
     grid-template-rows: 25vw 70vw 1fr;
     width: 100vw;
     height: 100vh;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.4s ease;
 }
 
 nav {
@@ -47,12 +46,32 @@ nav {
 
 .menu {
     position: fixed;
-    background-color: #fff;
+    background-color: rgb(148, 148, 148);
     height: 100000%;
     width: 100%;
-
+    
     transform: translateX(100%);
+}
 
+.menu ul {
+    padding-left: 10vw;
+}
+
+.menu li {
+    list-style-type: none;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    font-size: 20px;
+}
+
+.menu a {
+    color: white;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.menu a:visited {
+    color: white;
 }
 
 .show-menu {
