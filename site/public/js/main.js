@@ -4,8 +4,8 @@ function toggleMenu() {
 
     var element = document.querySelector(".container");
     element.classList.toggle("fade");
-
+/* TODO: fix dis
     var element = document.querySelector("body");
-    element.classList.toggle("no-scroll");
+    element.classList.toggle("no-scroll"); */
 }
 
