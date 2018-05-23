@@ -2,7 +2,7 @@ function toggleMenu() {
     var element = document.querySelector(".wrapper");
     element.classList.toggle("show-menu");
 
-    var element = document.querySelector(".container");
+    var element = document.querySelector(".fade-plane");
     element.classList.toggle("fade");
 /* TODO: fix dis
     var element = document.querySelector("body");
