@@ -76,7 +76,7 @@ nav {
 .menu-button {
     grid-column: 2;
     background-color: inherit;
-    border-bottom: 1px solid #707070;
+    /* border-bottom: 1px solid #707070; */
 }
 
 .menu {
@@ -154,6 +154,11 @@ nav {
     background-color: rgb(199, 199, 199);
 }
 
+.gallery img {
+    height: 70vw;
+    width: 100%;
+}
+
 /* semantic elements ??? */
 .section {
     grid-row: 3;
@@ -174,7 +179,7 @@ nav {
 
 .info p {
     padding: 15px;
-    font-size: 15px;
+    font-size: 5vw;
     line-height: 1.6;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }

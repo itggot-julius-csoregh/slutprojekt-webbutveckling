@@ -15,6 +15,11 @@ function toggleMenu() {
     element.classList.toggle("no-scroll"); */
 }
 
+function linkPressed(linkNum) {
+    var element = document.querySelector("li:nth-child(" + linkNum + ")");
+    element.classList.toggle("menu-link");
+}
+
 $(document).ready(function () {
     $(".logo").click(function(){
         window.location = $(this).find("a:first").attr("href");
