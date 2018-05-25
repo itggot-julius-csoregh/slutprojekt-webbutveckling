@@ -2,6 +2,10 @@
     html, body {
         margin: 0;
         overflow: hidden;
+        margin: 7.5px;
+        height: calc(100% - 15px);
+        width: calc(100% - 15px);
+        background-color: #323232;
     }
 
     .menu {
@@ -9,12 +13,16 @@
     }
 
     .container {
+        width: 100vw;
         height: 100vh;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: 15vh repeat(2, 1fr);
         width: 100vw;
         min-height: 100vh;
+        grid-row-gap: 15px;
+        grid-column-gap: 15px;
+
     }
 
     nav {
@@ -83,13 +91,14 @@
         grid-row: 3;
         grid-column: 1 / 6;
         background-color: rgb(50, 50, 50);
+        
     }
 
     .info {
-        margin: 15px;
-        height: calc(100% - 22.5px);
-        width: calc(100% - 22.5px);
         background-color: rgb(243, 231, 210);
+        display: flex;
+        flex-flow: column;
+        height: 100%;
     }
 
 
@@ -100,15 +109,6 @@
         font-family: Verdana, Arial, Helvetica, sans-serif;
     }
 
-    .section .info {
-        margin-top: -7.5px;
-        margin-right: -7.5px;
-    }
-
-    .about .info {
-        margin-bottom: -7.5px;
-        margin-left: 7.5px;
-    }
 
     .fade-plane {
         display: none;
@@ -120,11 +120,7 @@
         height: 100%;
         width: 100%;
         background-color: #323232;
-        padding: 15px;
-        padding-top: 7.5px;
-        padding-left: 7.5px;
-        height: calc(100% - 22.5px);
-        width: calc(100% - 22.5px);
+
     }
 
     .violin {
@@ -134,12 +130,11 @@
 
         object-fit: cover;
         background-color: #323232;
-        padding: 15px;
-        padding-bottom: 7.5px;
-        padding-right: 7.5px;
-        height: calc(100% - 22.5px);
-        width: calc(100% - 22.5px);
+        height: 100%;
+        width: 100%;
     }
+
+
 
 
 
