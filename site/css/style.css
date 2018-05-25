@@ -17,10 +17,6 @@
         min-height: 100vh;
     }
 
-    img {
-        display: none;
-    }
-
     nav {
         background-color: rgb(50, 50, 50);
         grid-column: 1 / 9;
@@ -34,9 +30,7 @@
     .logo {
         grid-column: 1;
         color: #fff;
-        font-family: Quicksand;
         vertical-align: middle;
-        font-size: 5vw;
         overflow: hidden;
     }
 
@@ -48,7 +42,7 @@
         margin-left: 1vw;
         color: #fff;
         font-family: Quicksand;
-        font-size: 5vw;
+        font-size: 8vh;
     }
 
 
@@ -57,16 +51,12 @@
         text-decoration: none;
     }
 
-    .logo a:visited {
-        color: #fff;
-    }
-
     .desk-nav {
         grid-row: 1;
         grid-column: 2;
         display: grid;
         grid-template-columns: repeat(5, calc(80vw / 5));
-        
+        position: relative;
     }
 
     .desk-nav a {
@@ -75,10 +65,12 @@
         color: white;
         font-family: 'Trebuchet MS', Arial, sans-serif;
         text-decoration: none;
-    }
-
-    .desk-nav a:visited {
-        color: white;
+        text-align: center;
+        font-size: 2.5vh;
+        line-height: 100px;
+        white-space: nowrap;
+        padding-top: 1vh;
+        overflow-y: hidden;
     }
 
     .section {
@@ -100,6 +92,13 @@
         font-size: 1vw;
         line-height: 1.6;
         font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+
+    img {
+        grid-column: 6 / 9;
+        grid-row: 3;
+        height: 100%;
+        width: 100%;
     }
 
     .menu-icon {
